@@ -9,5 +9,3 @@ app
 {
 res.render("HenshinShop")
 });
-app.use('/public',express.static('public'));
-app.use('/css',express.static(__dirname +'/css'));
