@@ -9,5 +9,5 @@ app
 {
 res.render("HenshinShop")
 });
-
+app.set("view engine", "css");
 app.use(express.static(path.join(__dirname, 'public')));
