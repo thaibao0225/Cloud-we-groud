@@ -9,7 +9,7 @@ app
 {
 res.render("HenshinShop")
 });
-
+app.use('/public',express.static('public'));
 var http = require('http');
 var url = require('url');
 var fs = require('fs');
