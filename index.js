@@ -12,6 +12,4 @@ var express = require("express");
  //load view Engine
  app.use(express.static('public'));
  app.set('views', path.join(__dirname, './views'));
-
- res.render("index");
  app.listen(process.env.PORT || 3000);
