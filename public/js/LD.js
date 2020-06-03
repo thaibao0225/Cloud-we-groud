@@ -20,7 +20,7 @@ function show(){
 var KichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
 var ChuyenSlide = document.getElementsByClassName("chuyen_slide")[0];
 var Img = ChuyenSlide.getElementsByTagName("img");
-var Max = 1380 * Img.length - KichThuoc;
+var Max = KichThuoc * Img.length - KichThuoc;
 
 var Chuyen = 0;
 function Next(){
@@ -36,7 +36,7 @@ function Back(){
 }
 
 var time = 9000;//lập lại vô hạn
-var Chuyen = -1380;
+var Chuyen = -KichThuoc;
 function changeImg(){
     setTimeout("changeImg()", time)
     if(Chuyen < Max) {Chuyen += KichThuoc;}
