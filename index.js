@@ -9,6 +9,8 @@ var express = require("express");
  app.get("/", function(reg,res){
  	res.render("HenshinShop");
  });
+
+
  //load view Engine
  app.use(express.static('public'));
  app.set('views', path.join(__dirname, './views'));
