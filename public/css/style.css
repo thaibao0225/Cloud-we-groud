@@ -291,7 +291,7 @@ float:right;
 .foot_link a:hover{
   text-decoration: none;
   transition: all 0.3s;
-  color: white;
+  color: rgb(221, 65, 65);
 }
 .foot_link img{
   display: block;
