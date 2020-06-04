@@ -16,15 +16,7 @@
     display: none;
 }  */
 
-#logo{
-  position: absolute;
-  margin-top: 33%;
-  width: 100px;
-  height: 100px;
-  margin-left: -50px;
-  box-shadow: 4px 4px 1px 0px #8998da;
-  border: solid 2px rgb(52, 22, 107) ;
-}
+
 *{
   margin: 0;
   padding: 0;
@@ -169,7 +161,7 @@ select{
   border-top-left-radius: 50px;
   margin-left: 10px;
   float: left;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 #send{
   background-color: rgb(172, 36, 36);
@@ -181,7 +173,6 @@ select{
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   margin-left: 70.5px;
-  margin-top: -31px;
   float: left;
   border: none;
 }
@@ -367,26 +358,45 @@ float:right;
 .row{
   margin-right: 15px;
 }
-
-@media only screen and (max-width: 1300px){
-  #logo{
-    margin-left: 2%;
-    margin-top: 35%;   
-  }
-  .dieuhuong{
-    display: none;
-  }
+#logo{
+  position: absolute;
+  margin-top: 2%;
+  width: 100px;
+  height: 100px;
+  margin-left: 2%;
+  box-shadow: 4px 4px 1px 0px #8998da;
+  border: solid 2px rgb(52, 22, 107) ;
+  
 }
+
 @media only screen and (max-width: 1200px){
   #logo{
-    margin-left: 2%;
-    margin-top: 40%;   
+    width: 80px;
+    height: 80px;
+    margin-left: 1%;
+    margin-top: 1%;   
   }
+  /* .dropdown{
+    line-height: 50px;
+  } */
 }
-@media only screen and (max-width: 537px){
+@media only screen and (max-width: 1180px){
   #logo{
-    margin-left: -40%;
-    margin-top: 10%;   
+    width: 60px;
+    height: 60px;
+    margin-left: 1%;
+    margin-top: 1%;   
   }
+  /* .dropdown{
+    line-height: 40px;
+  } */
+}
+@media only screen and (max-width: 650px){
+  #logo{
+    display: none;   
+  }
+  /* .dropdown{
+    line-height: 30px;
+  } */
 }
 /**/
