@@ -63,6 +63,7 @@ img{
 /*select tỉnh quận*/
 #select{
   padding-left: 30px;
+
 }
 /*menu bar*/
 a{
@@ -101,9 +102,10 @@ select{
 }
 /* phân chia 2 bên */
 .map_left{
-  margin-left: 10%;
+  margin-left: 9%;
   width: 30%;
-  margin-top:  50px;   
+  margin-top:  50px; 
+ 
 }
 .map_right{
   width: 56%;
@@ -126,9 +128,9 @@ select{
 }
 #bem{
   margin-left: 10px; 
-  height: 44px; 
-  border: rgb(179, 176, 176) solid 1px;
-  font-size: 10px;
+  height: 41px;
+  border: 1px black;
+
 }
 .left > i{
   color: red;
@@ -138,6 +140,7 @@ select{
   margin-top: 10px;
   margin-left: -50px;
 }
+
 #inp{
   width: 375px;
   height: 40px;
@@ -151,31 +154,19 @@ select{
   margin: 10px;
 }
 /*nút send*/
-.send_all{
-  background-color: rgb(172, 36, 36);
+.send_all a{
+  background-color: rgb(36, 95, 172);
   color: white;
   width: 70px;
   height: 40px;
   text-align: center;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-  margin-left: 10px;
   float: left;
-  margin-top: 28px;
-}
-#send{
-  background-color: rgb(172, 36, 36);
-  color: white;
-  font-size: 20px;
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-  margin-left: 70.5px;
+  /* border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px; */
   float: left;
-  border: none;
+  margin-left: 2%;
 }
+
 /* phần động js*/
 #mama{
   border-bottom:rgb(204, 201, 201) 0.1px solid;
@@ -242,12 +233,7 @@ float:right;
 .menu-link4{
   float:right;
 }
-.menu-link5:hover .submenu-link5 {
-      display: block;
-}
-.menu-link5 {
-  float:right;
-}
+
 .croll_top{
   margin-top: 10px;/*top*/
   height: 30px;
@@ -394,6 +380,20 @@ float:right;
 @media only screen and (max-width: 650px){
   #logo{
     display: none;   
+  }
+  /* .dropdown{
+    line-height: 30px;
+  } */
+}
+@media only screen and (max-width: 1300px){
+  .left{
+    display: none;
+  }
+  .map_left{
+    display: none;
+  }
+  .right{
+    width: 2%;
   }
   /* .dropdown{
     line-height: 30px;
