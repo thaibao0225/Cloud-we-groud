@@ -580,3 +580,13 @@ float:right;
 #map2{
   margin-top: 5%;
 }
+.sp_noi_bat img{
+width: 200px;
+height: 200px;
+}
+.sp_noi_bat{
+  margin-left:6% ;
+  height: 500px;
+  width: 90%;
+  overflow: hidden;
+}
