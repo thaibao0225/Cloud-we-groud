@@ -1,0 +1,247 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing page</title>
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/all.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+        
+    </head>
+    
+    <body>
+    
+            <img id="logo" src="picture/logo.PNG" alt="">
+       
+          
+        <div class="toptop">
+            <marquee style="background-color: rgb(230, 166, 141);" behavior="" direction="right"><!-----thanh chạy top----->
+                <div class="croll_top">
+                    <a href="#"><img style="height:50px; width: 200px; margin-top: -10px;" src="picture/sale.PNG" alt="#"></a>
+                    <a href="#"><img style="height:50px; width: 50px; margin-top: -10px;" src="picture/sale1.PNG" alt="#"></a><p style="color:rgb(14, 3, 3);">Giảm giá cực shock khi mua với hóa đơn trên 2 triệu đồng</p>
+                </div>
+            </marquee>       
+           
+    <!---------------------------submenu--------------------------------->
+            <div class="dropdown" >
+                <div class="chon menu-link1" >
+                    <a  color: aliceblue; href="/login">Đăng nhập</a>
+                </div>
+                <div class="chon menu-link2">
+                    <a href="">Giỏ hàng</a>
+                                    
+                </div>
+                <div class="chon menu-link3">
+                    <a href="/product">Gốc nổi bật</a>
+                    <div class="submenu submenu-link3">
+                        <a href="/product">Loại đồ chơi manga</a>
+                        <a href="/product">Loại trang phục codeplay</a>
+                    </div>
+                </div>
+                <div class="chon menu-link4">
+                    <a href="/about">Giới thiệu</a>
+                    
+                </div>
+                <div class="chon menu-link6">
+                    <a href="/">Trang chủ</a>
+                    
+                </div>
+            </div>  
+        </div>
+        <!------------------side chuyển động------------------------------->  
+       
+     
+        <center>
+            <div class="top">  
+                <div id="slider">
+                    <div class="slide">
+                        <div class="dieuhuong">           
+                            <i class="fas fa-angle-double-left" onclick="Back();"></i>
+                            <i class="fas fa-angle-double-right" onclick="Next();"></i>        
+                            </div>
+                                <div class="chuyen_slide">
+                                    <div class="hinh">
+                                    <img src="picture/slide1.PNG">
+                                    <img src="picture/slide2.PNG">            
+                                    <img src="picture/slide3.PNG"> 
+                                    <img src="picture/slide4.PNG"> 
+                                 </div>           
+                             </div>
+                        </div>
+                   </div>
+               
+                </div>
+            </div>
+        </center>
+        <!-----------------Quảng cáo dưới chân trang----------------------
+        <div id="show_case">   
+            <div id="tat" >
+                <a href="#" onclick="hide()">Tắt quảng cáo X</a>
+            </div> 
+                        
+            <div class="video" onclick="watch()">
+                <video id="vid" height="auto" width="320px" controls >
+                <source src="VUS.mp4" type="video/mp4" >
+            </video>
+            </div >      
+            <div id="mo">
+                <a href="#" onclick="show()">Mở quảng cáo</a>
+            </div>div
+        </div>->
+    <-----------------------------phần động js------------------------------------>
+    
+        
+    <!----------------------------------------------------------------------------->
+      <div class="middle">
+        <div class="map_left">
+                <br><br>                         
+                <i id="dv" style="font-size: 25px; width: 50px;" class="fa fa-map-marked-alt"></i>
+                <select id="select" style="height: 30px;" title="This menthod is required" required>
+                    <option>TÌM THEO QUẬN</option>
+                    <option id="meo">Q1</option>
+                    <option>Q2</option>
+                    <option>Q3</option>
+                    <option>Q4</option>
+                    <option>Q5</option>
+                    <option>Q6</option>
+                    <option>Q7</option>
+                    <option>Q8</option>
+                    <option>Q9</option>
+                </select>
+                <br><br>
+
+                <H3 style="float: left; color: rgb(244, 242, 247);box-shadow: 0.1em 0.1em 0.1em #f8f8f8, -0.1em 0.1em 0.4em  #f8f8f8;">TÌM TẤT CẢ TRUNG TÂM</H3>
+                <div class="tim">
+                    <i style="font-size: 30px; width: 40px; box-shadow: 0.1em 0.1em 0.1em #f8f8f8, -0.1em 0.1em 0.4em  #f8f8f8;" class="fa fa-map-marked-alt"></i>
+                    <i id="menu_map" onclick="showhide();" style="font-size: 30px; width: 40px; margin-left: 1px;box-shadow: 0.1em 0.1em 0.1em #f8f8f8, -0.1em 0.1em 0.4em  #f8f8f8;" class="fas fa-bars"></i>
+                </div>       
+
+            </div>
+            <div class="drop-content"><!--xem địa điểm dạng select submenu-->
+                <select id="hide" style=" background-color: rgb(28, 9, 97); display: none;" multiple size="3">
+                    <option style="background-image: url(admap.PNG);"></option>
+                    <option style="background-image: url(admap.PNG);"></option>
+                    <option style="background-image: url(admap.PNG);"></option>
+                    <option style="background-image: url(admap.PNG);"></option>
+                    <option style="background-image: url(admap.PNG);"></option>
+                    <option style="background-image: url(admap.PNG);"></option>
+                    <option style="background-image: url(admap.PNG);"></option>
+                    <option style="background-image: url(admap.PNG);"></option>
+                    <option style="background-image: url(admap.PNG);"></opton>    
+                </select>
+            </div>
+            <iframe style="box-shadow: 0.3em 0.1em 0.3em #200303, -0.3em 0em 0.3em #200303;" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8735508700515!2d106.64208311527449!3d10.744227662723993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e630ac8185f%3A0x7215d0e7dba445e1!2zMTQyIFBo4bqhbSBQaMO6IFRo4bupLCBQaMaw4budbmcgNCwgUXXhuq1uIDYsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1581087317721!5m2!1sen!2s" 
+            width="40%" height="380px"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        
+    </div>
+   
+    <div class="thu">
+        <div id="register"><br><br><!--phần đăng ký-->
+                <center><h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: rgb(29, 102, 185); font-weight: 900;">Thông tin khảo sát người tiêu dùng</h2></center><br><br><br>
+               
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="left" style="width: 400px; text-align: center;">
+                                <div class="lienhe_about">
+                                    <p> &#9748;Địa chỉ&#9748;</p>
+                                    <h6>146A Phan Văn Trị, phường 12, quận Bình Thạnh, TP.HCM</p> 
+                                    <p> &#9748; Điện thoại&#9748;</p>
+                                    <h6> 028 3841 0316</p>
+                                    <p> &#9748;Email&#9748;</p>
+                                    <h6>takishop2012@gmail.com</p>
+                                    <p> &#9748;Thời gian làm việc &#9748;</p>
+                                    <h6>Tất cả các ngày trong tuần / 9:00 AM - 8:00 PM</p>
+                                 </div>
+                            </div>
+                           </div>
+                            <div class="col-sm-7">
+                                <div class="right">
+                                    <input id="inp" placeholder="*Họ và tên" type="text">
+                                    <input id="inp" placeholder="Ngày tháng năm sinh (dd/mm/yyy)"type="text">
+                                    <input id="inp" placeholder="Địa chỉ thông tin liên lạc" type="text">
+                                    <select id="bem">
+                                       <option id="inp">THÀNH PHỐ</option>
+                                       <option id="inp">TP.HCM</option>
+                                       <option id="inp">HÀ NỘI</option>
+                                       <option id="inp">BÌNH DƯƠNG</option>
+                                       <option id="inp">HẢI PHÒNG</option>
+                                    </select>
+                                    <input id="inp" placeholder="*Số điện thoại" type="texts">
+                                    <select id="bem">
+                                       <option id="inp">Sản phẩm yêu thích</option>
+                                       <option id="inp">Trang phục codeplay</option>
+                                       <option id="inp">Mô hình đồ chơi manga</option>
+                                       
+                                    </select>
+                                    <input id="inpa" placeholder="Thêm thông tin về sản phẩm mong muốn" type="text">    
+                                
+                                    <div class="send_all">
+                                        <a href="#"><i  class="far fa-paper-plane"></i></a>
+                                        <a href="#"><p>Gửi thông tin</p>
+                                   </div>
+                                </div> 
+                            </div>
+                       </div>
+                </div>
+                  </div>
+        </div>
+    
+      </div>
+    <div class="footer"><!---chân-->
+        
+        <div class="row">
+            <div class="col-sm-5">
+                <img id="logo_chan" src="picture/logo.PNG" alt="">
+         </div>
+         <div class="col-sm-7">
+             
+             <div class="foot_link">
+                 <a href="">Giới thiệu về Henshin Shop</a>
+                 <a href="">Các ưu đãi</a>
+                 <a href="">Tải ứng dụng</a>
+                 <a href="">Tải ứng dụng Henshin Shop tại:</a>
+                 <img id="app" src="picture/appstore.PNG" alt="appstore">
+                 <img id="app" src="picture/googleplay.PNG" alt="googleplay">
+             </div>
+            
+             <div class="foot_link">
+                <a href="">Xuất xứ han</a>
+                <a href="">Gốc học viện </a>
+                <a href="">Thư viện</a>
+                 <a href="">Khu vực miền nam</a>
+                 <i class="fas fa-phone-volume">&nbsp&nbsp(033)3333333</i>
+                 <a href="">Hà nội</a>
+                 <i class="fas fa-phone-volume">&nbsp&nbsp(033)3333333</i><br><br>
+                
+             </div>
+         </div>
+        </div>
+       <div class="end">
+        <p> © Henshin Shop - Giấy chứng nhận doanh nghiệp số: 0313548147, Ngày cấp giấy phép: 24/11/2015, Nơi cấp: SKHDT TP.HCM</p>
+        <p>Trụ Sở Chính Tại 189 Nguyễn Thị Minh Khai, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh , Điện thoại: 028 3925 9899</p>
+           
+                <div class="conect">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                 </div>
+                 <div class="mum">
+                    <div id="flip"><i class="fas fa-search"></i></div>
+                    <div id="panel">
+                        <i class="fas fa-phone-alt"></i>
+                        <i class="fas fa-envelope-open-text"></i>
+                        <i class="fas fa-paper-plane"></i>
+                        <i class="fas fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-------khai báo thư viện jquery------>
+    <script type="text/javascript" src="js/LD.js"></script>
+    </body>
+    </html>

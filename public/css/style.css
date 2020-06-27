@@ -581,13 +581,13 @@ float:right;
   margin-top: 5%;
 }
 .sp_noi_bat img{
-width: 197.2px;
+width: 197.1px;
 height: 200px;
 padding: 1px;
 
 }
 .sp_noi_bat{
-
+  margin-top: 10px;
   height: 500px;
   width: 100%;
   overflow: hidden;
