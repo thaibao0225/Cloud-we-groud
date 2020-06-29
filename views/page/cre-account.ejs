@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/header') -%>
+    <title>Create</title>  
+</head>
+
+<body>
+
+       <a href="/"> <img id="logo" src="../picture/logo.PNG" alt=""></a>
+   
+      
+    <div class="toptop">
+        <marquee style="background-color: rgb(230, 166, 141);" behavior="" direction="right"><!-----thanh chạy top----->
+            <div class="croll_top">
+                <a href="#"><img style="height:50px; width: 200px; margin-top: -10px;" src="../picture/sale.PNG" alt="#"></a>
+                <a href="#"><img style="height:50px; width: 50px; margin-top: -10px;" src="../picture/sale1.PNG" alt="#"></a><p style="color:white;">Giảm giá cực shock khi mua với hóa đơn trên 2 triệu đồng</p>
+            </div>
+        </marquee>       
+       
+<!---------------------------submenu--------------------------------->
+<div class="dropdown" >
+    <div class="chon menu-link1" >
+        <a  color: aliceblue; href="/login">Đăng nhập</a>
+    </div>
+    <div class="chon menu-link2">
+        <a href="">Giỏ hàng</a>
+                        
+    </div>
+    <div class="chon menu-link3">
+        <a href="/product">Gốc nổi bật</a>
+        <div class="submenu submenu-link3">
+            <a href="/product">Loại đồ chơi manga</a>
+            <a href="/product">Loại trang phục codeplay</a>
+        </div>
+    </div>
+    <div class="chon menu-link4">
+        <a href="/about">Giới thiệu</a>
+        
+    </div>
+    <div class="chon menu-link6">
+        <a href="/">Trang chủ</a>
+        
+    </div>
+</div>  
+</div>
+    <!------------------side chuyển động------------------------------->  
+   
+ 
+    
+<!----------------------------------------------------------------------------->
+  <center>
+    <div class="middle">
+        <div class="login">
+            <div class="login_form">
+                
+                <form method="POST" action="/taotaikhoan">
+                    <input id="log" name="username" type="text" placeholder="User name" value="chipu">
+                    <input id="log" name="password" type="text" placeholder="Password" value="yeuai">
+                    <button id="log">Login</button>
+                    <p id="log"></p><!--form action dung de tao su kien o node js-->
+                </form>
+            </div> 
+        </div>      
+  </div>
+  </center>
+       
+
+
+
+<footer>
+    <%- include('../partials/footer') -%>
+</footer>
+</body>
+</html>
