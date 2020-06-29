@@ -155,7 +155,9 @@ select{
   background-image:url("../picture/nen.jpg") ;
   height: 600px;
   width: 100%;
-  
+}
+#logToRegis:hover{
+color: red;
 }
 #map{
   margin-top: 10%;
@@ -401,9 +403,7 @@ float:right;
 #flip:hover{
   cursor: pointer;
 }
-#flip{
-    
-}
+
 .mum{
     position: absolute;
     height: 200px;

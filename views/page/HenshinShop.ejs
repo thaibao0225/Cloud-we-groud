@@ -1,96 +1,18 @@
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <head>
             <%- include('../partials/header') -%>
-            <title>Login</title>  
-        </head>
-        
+            <title>Login</title>   
     </head>
     
-    <body>
-    
-            <img id="logo" src="picture/logo.PNG" alt="">
-       
-          
-        <div class="toptop">
-            <marquee style="background-color: rgb(230, 166, 141);" behavior="" direction="right"><!-----thanh chạy top----->
-                <div class="croll_top">
-                    <a href="#"><img style="height:50px; width: 200px; margin-top: -10px;" src="picture/sale.PNG" alt="#"></a>
-                    <a href="#"><img style="height:50px; width: 50px; margin-top: -10px;" src="picture/sale1.PNG" alt="#"></a><p style="color:rgb(14, 3, 3);">Giảm giá cực shock khi mua với hóa đơn trên 2 triệu đồng</p>
-                </div>
-            </marquee>       
-           
+    <body>   
     <!---------------------------submenu--------------------------------->
-            <div class="dropdown" >
-                <div class="chon menu-link1" >
-                    <a  color: aliceblue; href="/login">Đăng nhập</a>
-                </div>
-                <div class="chon menu-link2">
-                    <a href="">Giỏ hàng</a>
-                                    
-                </div>
-                <div class="chon menu-link3">
-                    <a href="/product">Gốc nổi bật</a>
-                    <div class="submenu submenu-link3">
-                        <a href="/product">Loại đồ chơi manga</a>
-                        <a href="/product">Loại trang phục codeplay</a>
-                    </div>
-                </div>
-                <div class="chon menu-link4">
-                    <a href="/about">Giới thiệu</a>
-                    
-                </div>
-                <div class="chon menu-link6">
-                    <a href="/">Trang chủ</a>
-                    
-                </div>
-            </div>  
-        </div>
-        <!------------------side chuyển động------------------------------->  
+    <%- include('../partials/menu') -%>
+    <!------------------side chuyển động------------------------------->  
        
-     
-        <center>
-            <div class="top">  
-                <div id="slider">
-                    <div class="slide">
-                        <div class="dieuhuong">           
-                            <i class="fas fa-angle-double-left" onclick="Back();"></i>
-                            <i class="fas fa-angle-double-right" onclick="Next();"></i>        
-                            </div>
-                                <div class="chuyen_slide">
-                                    <div class="hinh">
-                                    <img src="picture/slide1.PNG">
-                                    <img src="picture/slide2.PNG">            
-                                    <img src="picture/slide3.PNG"> 
-                                    <img src="picture/slide4.PNG"> 
-                                 </div>           
-                             </div>
-                        </div>
-                   </div>
-               
-                </div>
-            </div>
-        </center>
-        <!-----------------Quảng cáo dưới chân trang----------------------
-        <div id="show_case">   
-            <div id="tat" >
-                <a href="#" onclick="hide()">Tắt quảng cáo X</a>
-            </div> 
-                        
-            <div class="video" onclick="watch()">
-                <video id="vid" height="auto" width="320px" controls >
-                <source src="VUS.mp4" type="video/mp4" >
-            </video>
-            </div >      
-            <div id="mo">
-                <a href="#" onclick="show()">Mở quảng cáo</a>
-            </div>div
-        </div>->
-    <-----------------------------phần động js------------------------------------>
-    
-        
-    <!----------------------------------------------------------------------------->
+    <%- include('../partials/slider') -%>
+      
+   
       <div class="middle">
         <div class="map_left">
                 <br><br>                         
