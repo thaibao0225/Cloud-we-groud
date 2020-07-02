@@ -170,23 +170,23 @@ function viewPayment(request, response) {
     }
     else
     {
+        console.log("blockpayment = "+ blockPayment);
         if (blockPayment == 1)
         {
             for(var i = 0; i< count; i++)
             {
-                arrBill[0].Price *= listkq[i*2+1];
-                arrBill[0].Num = listkq[i*2+1];
+                console.log("aa");
+                arrBill[i].Price *= listkq[i*2+1];
+                arrBill[i].Nums = listkq[i*2+1];
             }
             blockPayment = 2;
+            
         }
 
     }
     
     ///////////////
    
-
-
-
     response.render("page/payment", {productlist : arrBill });   
 }
 //
