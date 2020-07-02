@@ -9,20 +9,15 @@
 
 <!---------------------------submenu--------------------------------->
 <%- include('../partials/menu') -%>
-<!------------------side chuyển động------------------------------->  
-   
-<%- include('../partials/slider') -%>
-    
-<!----------------------------------------------------------------------------->
   <center>
     <div class="middle">
         <div class="login">
             <div class="login_form">
                 
-                <form method="POST" action="/login">
-                    <input id="log" name="username" type="text" placeholder="User name" value="chipu">
-                    <input id="log" name="password" type="text" placeholder="Password" value="yeuai">
-                    <button id="log">Login</button>
+                <form method="POST" action="/login"> 
+                    <input id="log" name="username" type="text" >
+                    <input id="log" name="password" type="text" >
+                    <button type="submit" id="log">Login</button>
                     <p>No account</p><a id="logToRegis" href="/taotaikhoan">Register</a>
                     <p id="log"></p><!--form action dung de tao su kien o node js-->
                 </form>
@@ -30,10 +25,7 @@
         </div>      
   </div>
   </center>
-       
-
-
-
+    
 <footer>
     <%- include('../partials/footer') -%>
 </footer>

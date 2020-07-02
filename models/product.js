@@ -7,8 +7,8 @@ var productSchema = mongoose.Schema({
     Unit: String,
     Information: String,
     urlImg: String
-} , { collection: 'Products' } );
+} , { collection: 'Product' } );
 
-var Product = mongoose.model('Products', productSchema);
+var Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;

@@ -335,6 +335,13 @@ float:right;
   color: rgb(252, 252, 252);
   font-weight: 700;
 }
+.order_form{
+  width: 100%;
+  height: 150%;
+  background-color: #5f8ed4;
+  position: absolute;
+  
+}
 .foot_link a:hover{
   text-decoration: none;
   transition: all 0.3s;
@@ -403,7 +410,13 @@ float:right;
 #flip:hover{
   cursor: pointer;
 }
+/*....................*/
+#order_pic{
+  width: 200px;
+  height: 100px;
+}
 
+/*....................*/
 .mum{
     position: absolute;
     height: 200px;
